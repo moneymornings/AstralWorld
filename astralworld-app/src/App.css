@@ -1,0 +1,227 @@
+
+
+.App {
+  text-align: center;
+}
+
+body{
+  /* body background */
+  background-image: url('./jonas-von-werne-ybK9n4jQON8-unsplash.jpg');
+  background-size: cover;
+}
+
+  .h1header{
+    color:white;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bolder;
+  }
+   .h1header2{
+    color:white;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bolder;
+  }
+
+
+/* Navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 20px;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #FFF48B;
+  text-align: center;
+  padding: 10px 8px;
+  text-decoration: none;
+  
+}
+
+li a:hover:not(.active) {
+  background-color: #EC297B;
+}
+
+/* .active {
+  background-color: #EC297B;
+} */
+
+
+.LYS {
+  color: white;
+  font-family:monospace;
+  text-align: center;
+  
+
+
+}
+
+.grid2{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 5px
+
+
+}
+
+
+/* Date Button */
+.datebtn{
+  text-align: center;
+}
+
+/* Grid */
+
+.grid{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-gap: 10px
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.ariesImg:hover .overlay {
+  opacity: 1;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Image Aries*/
+.ariesImg{
+  border: solid #EC297B;
+  border-radius: 10px;
+  height: 250px;
+  width: 400px;
+}
+
+
+/* Image Taurus*/
+.taurusImg{
+  border: solid #EC297B;
+  border-radius: 10px;
+  height: 250px;
+  width: 400px;
+}
+
+/* Image Gemini*/
+.geminiImg{
+  border: solid #EC297B;
+  border-radius: 10px;
+  height: 250px;
+  width: 400px;
+}
+
+/* Image Cancer*/
+.cancerImg{
+  border: solid #EC297B;
+  border-radius: 10px;
+  height: 250px;
+  width: 400px;
+}
+
+/* Image Leo*/
+.leoImg{
+  border: solid #EC297B;
+  border-radius: 10px;
+  height: 250px;
+  width: 400px;
+}
+/* Image Virgo*/
+.virgoImg{
+  border: solid #EC297B;
+  border-radius: 10px;
+  height: 250px;
+  width: 400px;
+}
+
+/* Image Libra*/
+.libraImg{
+  border: solid #EC297B;
+  border-radius: 10px;
+  height: 250px;
+  width: 400px;
+}
+/* Image Scorpio*/
+.scorpioImg{
+  border: solid #EC297B;
+  border-radius: 10px;
+  height: 250px;
+  width: 400px;
+}
+
+/* Image Sag */
+.sagImg{
+  border: solid #EC297B;
+  border-radius: 10px;
+  height: 250px;
+  width: 400px;
+}
+
+/* Image Capricorn*/
+.capImg{
+  border: solid #EC297B;
+  border-radius: 10px;
+  height: 250px;
+  width: 400px;
+}
+
+/* Image Aquarius*/
+.aquaImg{
+  border: solid #EC297B;
+  border-radius: 10px;
+  height: 250px;
+  width: 400px;
+}
+
+/* Image Pisces*/
+.piscesImg{
+  border: solid #EC297B;
+  border-radius: 10px;
+  height: 250px;
+  width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
