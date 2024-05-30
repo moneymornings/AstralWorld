@@ -10,12 +10,8 @@ import LearnYourSign from "./Child Components/LearnYourSign";
 import { createContext } from "react";
 import { useState, useEffect } from "react";
 
-//creating context
+//creating context for tracker 
 export const TrackerContext = createContext();
-
-
-
-
 
 
 
@@ -72,7 +68,7 @@ function App() {
       </TrackerContext.Provider>
   
       
-     
+      <div> We've had {counter} visitors! </div> 
 
 
   

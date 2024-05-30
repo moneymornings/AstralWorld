@@ -52,8 +52,8 @@ function TestCard() {
      <ReactCardFlip isFlipped={flip}
             flipDirection="vertical">
             <div onClick={() => setFlip(!flip)} style={{
-                width: '470px',
-                height: '400px',
+                width: '500px',
+                height: '500px',
                 backgroundImage: `url(${background})` ,
                 fontSize: '40px',
                 color: 'green',
@@ -78,7 +78,7 @@ function TestCard() {
             </div>
             <div style={{
                 width: '600px',
-                height: '400px',
+                height: '800px',
                 background: '#fbd7f8',
                 fontSize: '20px',
                 color: 'blue',

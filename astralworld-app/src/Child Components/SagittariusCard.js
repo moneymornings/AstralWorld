@@ -72,7 +72,7 @@ function SagittariusCard() {
             </div>
             <div style={{
                 width: '700px',
-                height: '700px',
+                height: '800px',
                 background: '#fbd7f8',
                 fontSize: '20px',
                 color: 'blue',
