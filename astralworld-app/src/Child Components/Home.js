@@ -1,13 +1,12 @@
-// import React,{ useContext} from 'react';
-// import { TrackerContext } from '../App';
+import React,{ useContext} from 'react';
+import { TrackerContext } from '../App';
 import {Typewriter} from 'react-simple-typewriter';
 
 
 
 
-
 export default function Home() {
-  // const vTrack = useContext(TrackerContext);
+  const vTrack = useContext(TrackerContext);
 
 
   //Typewriter function 
@@ -43,8 +42,8 @@ export default function Home() {
         </span>
       </h1>
     </div>
-
-    {/* <div> <h3> We've had {vTrack} Visitors!</h3></div> */}
+    <h3 style={{  color: 'white', paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal', textAlign: 'center' }}>
+     We've had {vTrack} Visitors! </h3>
     </>
   )
   

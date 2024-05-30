@@ -7,11 +7,11 @@ import Shop from "./Child Components/Shop";
 import NoPage from "./NoPage";
 import Home from './Child Components/Home';
 import LearnYourSign from "./Child Components/LearnYourSign";
-// import { createContext } from "react";
-// import { useState, useEffect } from "react";
+import { createContext } from "react";
+import { useState, useEffect } from "react";
 
 //creating context
-// export const TrackerContext = createContext();
+export const TrackerContext = createContext();
 
 
 
@@ -22,15 +22,15 @@ import LearnYourSign from "./Child Components/LearnYourSign";
 function App() {
 
   //creating visitor tracker 
-  // const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(0);
 
-  // useEffect(() => {
-  //     const storedCount = localStorage.getItem("siteVisits");
-  //     const startingCount = Number(storedCount) || 0;
-  //     setCounter(startingCount + 1);
+  useEffect(() => {
+      const storedCount = localStorage.getItem("siteVisits");
+      const startingCount = Number(storedCount) || 0;
+      setCounter(startingCount + 1);
 
 
-  // }, []);
+  }, []);
 
 
 
@@ -66,13 +66,13 @@ function App() {
     </div>
 
     
-{/* <TrackerContext.Provider value={ {counter:counter}}>
+ <TrackerContext.Provider value={ counter}>
       <Home/>
-      <Shop/>
+      {/* <Shop/> */}
       </TrackerContext.Provider>
   
-      <div> {typeof counter === 'number'? counter :null}</div>
-      <div> We've had {counter} visitors! </div> */}
+      
+     
 
 
   

@@ -2,13 +2,13 @@ import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-// import { useContext } from 'react';
-// import { TrackerContext } from '../App';
+import { useContext } from 'react';
+import { TrackerContext } from '../App';
 
 
 function Shop() {
 
-  // const vTrack = useContext(TrackerContext);
+  const vTrack = useContext(TrackerContext);
 
 
 
@@ -99,8 +99,8 @@ function Shop() {
 
     </div>
     </div>
-    {/* <div> <h3> We've had {vTrack} Visitors!</h3></div> */}
-
+    <h3 style={{  color: 'white', paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal', textAlign: 'center' }}>
+     We've had {vTrack} Visitors! </h3>
 
     </>
   )

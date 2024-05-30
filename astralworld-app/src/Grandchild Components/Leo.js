@@ -7,6 +7,12 @@ function Leo() {
   //Establishing State
     const [leo, setLeo] = useState("");
 
+    //setting state for hover component
+    const [hover, setHover] = useState(false);
+    const onhover =() => {
+      setHover(!hover);
+    };
+
 //Using UseEffect to Fetch (Leo) daily horoscope data from my API 
 
 useEffect(() =>{
@@ -49,12 +55,14 @@ function handleClickLeo(){  // this function triggers the pop-up that reveals th
 
   return (
     <>
+
+  
     <div>
-    {/* this is the clickable image for this sign: i added onclick and passed the handleClick function so when you click it you get */}
-    <img className='leoImg' src=" https://plus.unsplash.com/premium_photo-1678308064196-96c7563a9f5d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIxfHx6b2RpYWMlMjBzaWdufGVufDB8fDB8fHww" alt="HTML5 Icon" onClick={handleClickLeo} ></img>
+    {/* this is the clickable image for this sign: i added onclick and passed the handleClick function so when you click it you get the daily horoscope */}
+    <img className='leoImg' src=" https://plus.unsplash.com/premium_photo-1678308064196-96c7563a9f5d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIxfHx6b2RpYWMlMjBzaWdufGVufDB8fDB8fHww" alt="HTML5 Icon" onClick={handleClickLeo}  ></img>
     
     
-    
+   
     </div>
 
     </>
