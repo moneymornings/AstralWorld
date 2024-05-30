@@ -25,10 +25,10 @@ function TestCard() {
      headers: myHeaders,
      redirect: "follow"
    };
-   fetch("https://horoscope-astrology.p.rapidapi.com/horoscope?day=today&sunsign=aries", requestOptions)
+   fetch( 'https://horoscope-astrology.p.rapidapi.com/sign?s=aries', requestOptions)
    .then((response)=> response.json())
    .then((result) => {
-     setSigns(result.horoscope); //fetches horoscope data for sign and updates the state to that horoscope.
+     setSigns(result.about); //fetches horoscope data for sign and updates the state to that horoscope.
                                  //result is the object and horoscope is the property we are pulling.
      
      console.log(result);})

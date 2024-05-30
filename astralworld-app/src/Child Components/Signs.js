@@ -10,6 +10,7 @@ import Libra from '../Grandchild Components/Libra';
 import Leo from '../Grandchild Components/Leo';
 import Gemini from '../Grandchild Components/Gemini';
 import Capricorn from '../Grandchild Components/Capricorn';
+import { Typewriter } from 'react-simple-typewriter';
 
 
 
@@ -53,6 +54,14 @@ function handleClickAries(){ // this function triggers the pop-up that reveals t
   alert(signs)
 }
 
+const handleType = (count:number) => {
+  // access word count number
+  console.log(count)}
+
+
+const handleDone = () => {
+  console.log(`Done after 10 loops!`)
+}
 
 
 
@@ -68,16 +77,39 @@ function handleClickAries(){ // this function triggers the pop-up that reveals t
        <h1 className='h1header2'> for your Daily Horoscope</h1>
        <hr></hr>
       
+
+       <div className='Home'>
+      <h1 style={{  color: 'white', paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal', textAlign: 'center' }}>
+       What's Your Sign? {' '}
+        <span style={{ color: '#EC297B', fontWeight: 'bold' }}>
+          {/* Style will be inherited from the parent element */}
+          <Typewriter
+            words={['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces']}
+            loop={10}
+            cursor
+            cursorStyle='_'
+            typeSpeed={45}
+            deleteSpeed={20}
+            delaySpeed={1050}
+            onLoopDone={handleDone}
+            onType={handleType}
+          />
+        </span>
+      </h1>
+    </div>
        
     
       </div>
+      <hr></hr>
+      <hr></hr>
 
     <div className='grid'><div>
 
 
    {/* this is the clickable image for this sign: i added onclick and passed the handleClick function so when you click it you get */}
     
-    <img className='ariesImg' src=" https://plus.unsplash.com/premium_photo-1678308064203-542947e9d3f2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEzfHx6b2RpYWMlMjBzaWdufGVufDB8fDB8fHww" alt="HTML5 Icon" onClick={handleClickAries} ></img>
+    
+    <img className='ariesImg' src=" https://plus.unsplash.com/premium_photo-1678308064203-542947e9d3f2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEzfHx6b2RpYWMlMjBzaWdufGVufDB8fDB8fHww" alt="HTML5 Icon" onClick={handleClickAries}  ></img>
 
     
     

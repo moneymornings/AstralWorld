@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import AstralWorld from './images/AstralWorldLogo.jpeg';
@@ -8,7 +7,12 @@ import Shop from "./Child Components/Shop";
 import NoPage from "./NoPage";
 import Home from './Child Components/Home';
 import LearnYourSign from "./Child Components/LearnYourSign";
-import Button from 'react-bootstrap/Button';
+// import { createContext } from "react";
+// import { useState, useEffect } from "react";
+
+//creating context
+// export const TrackerContext = createContext();
+
 
 
 
@@ -17,44 +21,30 @@ import Button from 'react-bootstrap/Button';
 
 function App() {
 
-  const [date, setDate] = useState('');
+  //creating visitor tracker 
+  // const [counter, setCounter] = useState(0);
 
-useEffect(() =>{
+  // useEffect(() => {
+  //     const storedCount = localStorage.getItem("siteVisits");
+  //     const startingCount = Number(storedCount) || 0;
+  //     setCounter(startingCount + 1);
+
+
+  // }, []);
+
+
+
+
+
+
 
  
-  fetch('https://timeapi.io/api/Time/current/zone?timeZone=America/New_York')
-  .then((response)=> response.json())
-  .then((data) => {
-    setDate(data.date); //fetches time and date data 
-                                //result is the object and horoscope is the property we are pulling.
-    
-    console.log(data.date);})
-
-
- 
-
-  
-
-
-
-},[])
-
-function handleClickDate(){ // this function triggers the pop-up that reveals the daily horoscope when this  sign is chosen //
-  
-  alert(date)
-}
-
-
-
-
-
-
 
 
 
     return (
       <>
-
+      
       {/* Router */}
         <div>
         <BrowserRouter>
@@ -75,12 +65,17 @@ function handleClickDate(){ // this function triggers the pop-up that reveals th
      <img src={AstralWorld} /> 
     </div>
 
-      <div className="datebtn">
-    <Button onClick={handleClickDate} variant="outline-light">Today's Date</Button>{' '}
-    </div>
-      {/* <TestCard/> */}
+    
+{/* <TrackerContext.Provider value={ {counter:counter}}>
+      <Home/>
+      <Shop/>
+      </TrackerContext.Provider>
   
+      <div> {typeof counter === 'number'? counter :null}</div>
+      <div> We've had {counter} visitors! </div> */}
 
+
+  
     
     
     </>

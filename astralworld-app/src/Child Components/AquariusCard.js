@@ -68,7 +68,7 @@ function AquariusCard() {
                     </button> */}
             </div>
             <div style={{
-                borderRadius: '25px',
+                // borderRadius: '25px',
                 width: '900px',
                 height: '900px',
                 background: '#fbd7f8',

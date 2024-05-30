@@ -66,6 +66,13 @@ li a:hover:not(.active) {
 
 }
 
+.ShopCards{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-gap: 510px
+
+}
+
 .grid2{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
